@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -23,24 +23,24 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -64,20 +64,20 @@
 <wire x1="-1.5" y1="1.25" x2="-1.5" y2="-1.25" width="0.1" layer="21"/>
 <wire x1="-1.5" y1="-1.25" x2="1.5" y2="-1.25" width="0.1" layer="21"/>
 <wire x1="1.5" y1="-1.25" x2="1.5" y2="1.25" width="0.1" layer="21"/>
-<smd name="GND2" x="0" y="-0.9625" dx="0.35" dy="0.475" layer="1"/>
-<smd name="GND1" x="0.5" y="-0.9625" dx="0.35" dy="0.475" layer="1"/>
-<smd name="VDDIO" x="-0.5" y="-0.9625" dx="0.35" dy="0.475" layer="1"/>
-<smd name="SCL" x="0" y="0.9625" dx="0.35" dy="0.475" layer="1"/>
-<smd name="CS" x="0.5" y="0.9625" dx="0.35" dy="0.475" layer="1"/>
-<smd name="SDA" x="-0.5" y="0.9625" dx="0.35" dy="0.475" layer="1"/>
-<smd name="OCS_AUX" x="1.2625" y="0.25" dx="0.35" dy="0.475" layer="1" rot="R90"/>
-<smd name="INT2" x="1.2625" y="-0.25" dx="0.35" dy="0.475" layer="1" rot="R90"/>
-<smd name="VDD" x="1.2625" y="-0.75" dx="0.35" dy="0.475" layer="1" rot="R90"/>
-<smd name="SDO_AUX" x="1.2625" y="0.75" dx="0.35" dy="0.475" layer="1" rot="R90"/>
-<smd name="SDX" x="-1.2625" y="0.25" dx="0.35" dy="0.475" layer="1" rot="R90"/>
-<smd name="SCX" x="-1.2625" y="-0.25" dx="0.35" dy="0.475" layer="1" rot="R90"/>
-<smd name="INT1" x="-1.2625" y="-0.75" dx="0.35" dy="0.475" layer="1" rot="R90"/>
-<smd name="SDO" x="-1.2625" y="0.75" dx="0.35" dy="0.475" layer="1" rot="R90"/>
+<smd name="GND2" x="0" y="-0.9625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="GND1" x="0.5" y="-0.9625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="VDDIO" x="-0.5" y="-0.9625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="SCL" x="0" y="0.9625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="CS" x="0.5" y="0.9625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="SDA" x="-0.5" y="0.9625" dx="0.35" dy="0.575" layer="1"/>
+<smd name="OCS_AUX" x="1.2625" y="0.25" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="INT2" x="1.2625" y="-0.25" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="VDD" x="1.2625" y="-0.75" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="SDO_AUX" x="1.2625" y="0.75" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="SDX" x="-1.2625" y="0.25" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="SCX" x="-1.2625" y="-0.25" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="INT1" x="-1.2625" y="-0.75" dx="0.35" dy="0.575" layer="1" rot="R90"/>
+<smd name="SDO/SA0" x="-1.2625" y="0.75" dx="0.35" dy="0.575" layer="1" rot="R90"/>
 <text x="-0.127" y="1.878" size="0.9" layer="25" font="vector" align="center">&gt;Name</text>
 <circle x="-1.75" y="1.6" radius="0.15" width="0.3" layer="21"/>
 <rectangle x1="-1" y1="-0.7" x2="1" y2="0.7" layer="41"/>
@@ -127,8 +127,8 @@
 <package name="MOSFET_3D">
 <description>3-SOTFL, 0.95 mm pitch, 2.37 mm span, 2.92 X 1.30 X 1.12 mm body
  &lt;p&gt;3-pin SOTFL package with 0.95 mm pitch, 2.37 mm span with body size 2.92 X 1.30 X 1.12 mm&lt;/p&gt;</description>
-<smd name="G" x="-0.875" y="0.95" dx="1.5" dy="1" layer="1" stop="no"/>
-<smd name="S" x="-0.875" y="-0.95" dx="1.5" dy="1" layer="1" stop="no"/>
+<smd name="G" x="-0.875" y="0.95" dx="1.5" dy="1" layer="1" stop="no" cream="no"/>
+<smd name="S" x="-0.875" y="-0.95" dx="1.5" dy="1" layer="1" stop="no" cream="no"/>
 <circle x="-1.154" y="1.734" radius="0.25" width="0" layer="21"/>
 <wire x1="-0.65" y1="1.544" x2="0.65" y2="1.544" width="0.12" layer="21"/>
 <wire x1="-0.65" y1="-1.544" x2="0.65" y2="-1.544" width="0.12" layer="21"/>
@@ -140,11 +140,14 @@
 <rectangle x1="0.6" y1="-0.3" x2="1.35" y2="0.3" layer="29"/>
 <rectangle x1="-1.35" y1="0.65" x2="-0.6" y2="1.25" layer="29"/>
 <rectangle x1="-1.35" y1="-1.25" x2="-0.6" y2="-0.65" layer="29"/>
-<smd name="D" x="1.25" y="0" dx="2.05" dy="2.9" layer="1" stop="no"/>
+<smd name="D" x="1.25" y="0" dx="2.05" dy="2.9" layer="1" stop="no" cream="no"/>
 <wire x1="2.4" y1="2.4" x2="2.4" y2="-2.4" width="0.1" layer="39"/>
 <wire x1="2.4" y1="-2.4" x2="-2.4" y2="-2.4" width="0.1" layer="39"/>
 <wire x1="-2.4" y1="-2.4" x2="-2.4" y2="2.4" width="0.1" layer="39"/>
 <wire x1="-2.4" y1="2.4" x2="2.4" y2="2.4" width="0.1" layer="39"/>
+<rectangle x1="-1.35" y1="0.65" x2="-0.6" y2="1.25" layer="31"/>
+<rectangle x1="0.6" y1="-0.3" x2="1.35" y2="0.3" layer="31"/>
+<rectangle x1="-1.35" y1="-1.25" x2="-0.6" y2="-0.65" layer="31"/>
 </package>
 </packages>
 <symbols>
@@ -157,14 +160,15 @@
 <wire x1="-2.54" y1="2.54" x2="-3.175" y2="0" width="0.1524" layer="94"/>
 <wire x1="3.81" y1="-2.54" x2="4.445" y2="0" width="0.1524" layer="94"/>
 <pin name="B" x="7.62" y="0" visible="pad" length="short" rot="R180"/>
-<pin name="A" x="-6.35" y="0" visible="pad" length="short"/>
+<pin name="A" x="-7.62" y="0" visible="pad" length="short"/>
 <wire x1="4.445" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
 <wire x1="-3.175" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
 <text x="-3.81" y="3.81" size="1.778" layer="95">&gt;Name</text>
 <text x="-3.81" y="-5.08" size="1.778" layer="96">&gt;Value</text>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="LED">
-<pin name="A" x="-8.89" y="0" visible="pad" length="short"/>
+<pin name="A" x="-10.16" y="0" visible="pad" length="short"/>
 <pin name="C" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
 <wire x1="0" y1="0" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="-2.54" x2="-3.81" y2="0" width="0.254" layer="94"/>
@@ -182,6 +186,7 @@
 <wire x1="-1.905" y1="6.34139375" x2="-2.9624125" y2="5.710409375" width="0.254" layer="94"/>
 <text x="-2.54" y="7.62" size="1.778" layer="95" align="center">&gt;Name</text>
 <text x="-2.54" y="-4.064" size="1.778" layer="96" align="center">&gt;Value</text>
+<wire x1="-7.62" y1="0" x2="-6.35" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="MOSFET">
 <pin name="D" x="2.54" y="10.16" visible="pad" length="short" rot="R270"/>
@@ -307,7 +312,7 @@
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SCX" pad="SCX"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="SDO/SA0" pad="SDO"/>
+<connect gate="G$1" pin="SDO/SA0" pad="SDO/SA0"/>
 <connect gate="G$1" pin="SDO_AUX" pad="SDO_AUX"/>
 <connect gate="G$1" pin="SDX" pad="SDX"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
