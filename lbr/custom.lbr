@@ -81,13 +81,13 @@
 <text x="-0.127" y="1.878" size="0.9" layer="25" font="vector" align="center">&gt;Name</text>
 <circle x="-1.75" y="1.6" radius="0.15" width="0.3" layer="21"/>
 <rectangle x1="-1" y1="-0.7" x2="1" y2="0.7" layer="41"/>
-<wire x1="-2.6" y1="2.1" x2="2.6" y2="2.1" width="0.1" layer="39"/>
-<wire x1="2.6" y1="-2.1" x2="-2.6" y2="-2.1" width="0.1" layer="39"/>
-<wire x1="-2.6" y1="-2.1" x2="-2.6" y2="2.1" width="0.1" layer="39"/>
-<wire x1="2.6" y1="2.1" x2="2.6" y2="-2.1" width="0.1" layer="39"/>
-<rectangle x1="-2.5" y1="-2" x2="2.7" y2="2.2" layer="41"/>
-<rectangle x1="-2.5" y1="-2" x2="2.7" y2="2.2" layer="42"/>
-<rectangle x1="-2.5" y1="-2" x2="2.7" y2="2.2" layer="43"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.1" layer="39"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.1" layer="39"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.1" layer="39"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.1" layer="39"/>
+<rectangle x1="-2.5" y1="-2" x2="2.5" y2="2" layer="41"/>
+<rectangle x1="-2.5" y1="-2" x2="2.5" y2="2" layer="42"/>
+<rectangle x1="-2.5" y1="-2" x2="2.5" y2="2" layer="43"/>
 </package>
 <package name="0805_RESISTOR_3D">
 <description>Chip, 2.00 X 1.25 X 0.60 mm body
