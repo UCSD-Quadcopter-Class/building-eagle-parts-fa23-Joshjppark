@@ -81,12 +81,12 @@
 <text x="-0.1" y="1.7" size="0.9" layer="25" font="vector" align="center">&gt;Name</text>
 <circle x="-1.75" y="1.6" radius="0.15" width="0.3" layer="21"/>
 <rectangle x1="-1" y1="-0.7" x2="1" y2="0.7" layer="41"/>
-<wire x1="-2.4" y1="2.15" x2="-2.4" y2="-2.15" width="0.05" layer="39"/>
-<wire x1="-2.4" y1="-2.15" x2="2.4" y2="-2.15" width="0.05" layer="39"/>
-<wire x1="2.4" y1="-2.15" x2="2.4" y2="2.15" width="0.05" layer="39"/>
-<wire x1="2.4" y1="2.15" x2="-2.4" y2="2.15" width="0.05" layer="39"/>
 <rectangle x1="-2.4" y1="-2.2" x2="2.4" y2="2.1" layer="42"/>
 <rectangle x1="-2.4" y1="-2.2" x2="2.4" y2="2.1" layer="43"/>
+<wire x1="-2.4" y1="2.1" x2="2.6" y2="2.1" width="0.1" layer="39"/>
+<wire x1="2.6" y1="2.1" x2="2.6" y2="-1.9" width="0.1" layer="39"/>
+<wire x1="2.6" y1="-1.9" x2="-2.4" y2="-1.9" width="0.1" layer="39"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="2.1" width="0.1" layer="39"/>
 </package>
 <package name="0805_RESISTOR_3D">
 <description>Chip, 2.00 X 1.25 X 0.60 mm body
@@ -214,10 +214,10 @@
 <pin name="CS" x="-7.62" y="-5.08" visible="pad" length="short"/>
 <pin name="SDA" x="-7.62" y="10.16" visible="pad" length="short"/>
 <pin name="VDD" x="-7.62" y="15.24" visible="pad" length="short"/>
-<pin name="MDSA" x="-7.62" y="-10.16" visible="pad" length="short"/>
-<pin name="MSCL" x="-7.62" y="-15.24" visible="pad" length="short"/>
-<pin name="O_AUX" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
-<pin name="S_AUX" x="5.08" y="5.08" visible="pad" length="short" rot="R180"/>
+<pin name="SDX" x="-7.62" y="-10.16" visible="pad" length="short"/>
+<pin name="SCX" x="-7.62" y="-15.24" visible="pad" length="short"/>
+<pin name="OCS_AUX" x="5.08" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="SDO_AUX" x="5.08" y="5.08" visible="pad" length="short" rot="R180"/>
 <pin name="VDDIO" x="5.08" y="10.16" visible="pad" length="short" rot="R180"/>
 <pin name="INT1" x="5.08" y="15.24" visible="pad" length="short" rot="R180"/>
 <pin name="INT2" x="5.08" y="-5.08" visible="pad" length="short" rot="R180"/>
@@ -291,24 +291,24 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="IMU" prefix="U">
+<deviceset name="IMU-LSM6DS0" prefix="U">
 <gates>
 <gate name="G$1" symbol="IMU" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-LSM6DS0-IMU" package="IMU">
+<device name="-LSM" package="IMU">
 <connects>
 <connect gate="G$1" pin="CS" pad="CS"/>
 <connect gate="G$1" pin="GND" pad="GND1 GND2"/>
 <connect gate="G$1" pin="INT1" pad="INT1"/>
 <connect gate="G$1" pin="INT2" pad="INT2"/>
-<connect gate="G$1" pin="MDSA" pad="SDX"/>
-<connect gate="G$1" pin="MSCL" pad="SCX"/>
-<connect gate="G$1" pin="O_AUX" pad="OCS_AUX"/>
+<connect gate="G$1" pin="OCS_AUX" pad="OCS_AUX"/>
 <connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SCX" pad="SCX"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
 <connect gate="G$1" pin="SDO" pad="SDO"/>
-<connect gate="G$1" pin="S_AUX" pad="SDO_AUX"/>
+<connect gate="G$1" pin="SDO_AUX" pad="SDO_AUX"/>
+<connect gate="G$1" pin="SDX" pad="SDX"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
 <connect gate="G$1" pin="VDDIO" pad="VDDIO"/>
 </connects>
