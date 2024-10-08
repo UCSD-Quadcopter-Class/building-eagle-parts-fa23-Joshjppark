@@ -78,15 +78,16 @@
 <smd name="SCX" x="-1.2625" y="-0.25" dx="0.35" dy="0.475" layer="1" rot="R90"/>
 <smd name="INT1" x="-1.2625" y="-0.75" dx="0.35" dy="0.475" layer="1" rot="R90"/>
 <smd name="SDO" x="-1.2625" y="0.75" dx="0.35" dy="0.475" layer="1" rot="R90"/>
-<text x="-0.1" y="1.7" size="0.9" layer="25" font="vector" align="center">&gt;Name</text>
+<text x="-0.127" y="1.878" size="0.9" layer="25" font="vector" align="center">&gt;Name</text>
 <circle x="-1.75" y="1.6" radius="0.15" width="0.3" layer="21"/>
 <rectangle x1="-1" y1="-0.7" x2="1" y2="0.7" layer="41"/>
-<rectangle x1="-2.4" y1="-2.2" x2="2.4" y2="2.1" layer="42"/>
-<rectangle x1="-2.4" y1="-2.2" x2="2.4" y2="2.1" layer="43"/>
 <wire x1="-2.4" y1="2.1" x2="2.6" y2="2.1" width="0.1" layer="39"/>
-<wire x1="2.6" y1="2.1" x2="2.6" y2="-1.9" width="0.1" layer="39"/>
 <wire x1="2.6" y1="-1.9" x2="-2.4" y2="-1.9" width="0.1" layer="39"/>
 <wire x1="-2.4" y1="-1.9" x2="-2.4" y2="2.1" width="0.1" layer="39"/>
+<wire x1="2.6" y1="2.1" x2="2.6" y2="-1.9" width="0.1" layer="39"/>
+<rectangle x1="-2.5" y1="-2" x2="2.7" y2="2.2" layer="41"/>
+<rectangle x1="-2.5" y1="-2" x2="2.7" y2="2.2" layer="42"/>
+<rectangle x1="-2.5" y1="-2" x2="2.7" y2="2.2" layer="43"/>
 </package>
 <package name="0805_RESISTOR_3D">
 <description>Chip, 2.00 X 1.25 X 0.60 mm body
@@ -210,7 +211,7 @@
 </symbol>
 <symbol name="IMU">
 <pin name="SCL" x="-7.62" y="5.08" visible="pad" length="short"/>
-<pin name="SDO" x="-7.62" y="0" visible="pad" length="short"/>
+<pin name="SDO/SA0" x="-7.62" y="0" visible="pad" length="short"/>
 <pin name="CS" x="-7.62" y="-5.08" visible="pad" length="short"/>
 <pin name="SDA" x="-7.62" y="10.16" visible="pad" length="short"/>
 <pin name="VDD" x="-7.62" y="15.24" visible="pad" length="short"/>
@@ -291,7 +292,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="IMU-LSM6DS0" prefix="U">
+<deviceset name="LSM6DS0" prefix="U">
 <gates>
 <gate name="G$1" symbol="IMU" x="0" y="0"/>
 </gates>
@@ -306,7 +307,7 @@
 <connect gate="G$1" pin="SCL" pad="SCL"/>
 <connect gate="G$1" pin="SCX" pad="SCX"/>
 <connect gate="G$1" pin="SDA" pad="SDA"/>
-<connect gate="G$1" pin="SDO" pad="SDO"/>
+<connect gate="G$1" pin="SDO/SA0" pad="SDO"/>
 <connect gate="G$1" pin="SDO_AUX" pad="SDO_AUX"/>
 <connect gate="G$1" pin="SDX" pad="SDX"/>
 <connect gate="G$1" pin="VDD" pad="VDD"/>
